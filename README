@@ -1,0 +1,9 @@
+This is a project that maintains some basic and intermediate level examples of eLua running on it's supported platforms.
+These examples (and others that became individual projects also found on our github repo) used to be part of our distros, included in the ROMFS.
+They were removed from the distro to keep it smaller, cleaner and not oriented to a single type of audience.
+
+You are welcomed to extend these examples to new platfoms and to add new ones too. 
+
+For information and tutorials about each of these examples, please refer to their pages on the eLua User Labs wiki at http://wiki.eluaproject.net/Projects
+
+The main site of the eLua Project is http://www.eluaproject.net
