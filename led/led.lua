@@ -26,6 +26,9 @@ elseif pd.board() = "ET-STM32" then
 elseif pd.board() == "MBED" then
   ledpin = mbed.pio.LED1
   mbed.pio.configpin( ledpin, 0, 0, 0 )
+elseif pd.board() == "MIZAR32" then
+  ledpin = pio.PB_29
+  invert = true
 else
   print( "\nError: Unknown board " .. pd.board() .. " !" )
   return
