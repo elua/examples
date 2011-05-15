@@ -21,7 +21,7 @@ elseif pd.board() == "STR-E912" then
   ledpin = pio.P6_4
 elseif pd.board() == "ELUA-PUC" then
   ledpin = pio.P1_20
-elseif pd.board() = "ET-STM32" then
+elseif pd.board() == "ET-STM32" then
   ledpin = pio.PA_5
 elseif pd.board() == "MBED" then
   ledpin = mbed.pio.LED1
