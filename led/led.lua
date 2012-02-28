@@ -23,6 +23,8 @@ elseif pd.board() == "ELUA-PUC" then
   ledpin = pio.P1_20
 elseif pd.board() == "ET-STM32" then
   ledpin = pio.PA_5
+elseif pd.board() == "STM32F4DSCY" then
+  ledpin = pio.PD_13
 elseif pd.board() == "MBED" then
   ledpin = mbed.pio.LED1
   mbed.pio.configpin( ledpin, 0, 0, 0 )
@@ -35,16 +37,16 @@ else
 end
 
 function cycle()
-  if not invert then 
-    pio.pin.sethigh( ledpin ) 
-  else 
-    pio.pin.setlow( ledpin ) 
+  if not invert then
+    pio.pin.sethigh( ledpin )
+  else
+    pio.pin.setlow( ledpin )
   end
   tmr.delay( 0, 500000 )
-  if not invert then 
-    pio.pin.setlow( ledpin ) 
-  else 
-    pio.pin.sethigh( ledpin ) 
+  if not invert then
+    pio.pin.setlow( ledpin )
+  else
+    pio.pin.sethigh( ledpin )
   end
   tmr.delay( 0, 500000 )
 end
