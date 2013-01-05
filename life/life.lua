@@ -109,3 +109,5 @@ function LIFE(w,h)
     delay()           -- no delay
   end
 end
+
+LIFE(40,20)
