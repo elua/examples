@@ -28,6 +28,8 @@ local function gpio_negedge_handler( resnum )
   if prev_gpio then prev_gpio( resnum ) end
 end
 
+pio.pin.setdir( pio.INPUT, pio.P0_0 )
+
 -- Set timer interrupt handler
 prev_tmr = cpu.set_int_handler( cpu.INT_TMR_MATCH, tmr_handler )
 -- Set GPIO interrupt on change (negative edge) interrupt handler
