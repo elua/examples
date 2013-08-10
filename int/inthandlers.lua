@@ -4,6 +4,7 @@
 
 local vtmrid = tmr.VIRT0
 local to = 1500000
+local uartid = 0
 
 local prev_tmr, new_prev_tmr, prev_gpio
 
