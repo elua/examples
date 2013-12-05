@@ -9,6 +9,9 @@ local pi = math.pi
 
 local img = io.open( "/rom/logo.bin", "rb")
 if img == nil then
+  img = io.open( "/mmc/logo.bin", "rb")
+end
+if img == nil then
   print "Unable to load image"
   return 0
 end
