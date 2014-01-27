@@ -25,6 +25,7 @@ elseif pd.board() == "ET-STM32" then
   ledpin = pio.PA_5
 elseif pd.board() == "STM32F4DISCOVERY" then
   ledpin = pio.PD_13
+  uartid = uart.CDC
 elseif pd.board() == "MBED" then
   ledpin = mbed.pio.LED1
   mbed.pio.configpin( ledpin, 0, 0, 0 )
